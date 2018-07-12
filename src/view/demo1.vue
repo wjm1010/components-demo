@@ -8,7 +8,8 @@
         <button @click="changeComp('compC')">我是C模板</button>
       </div>
       <keep-alive>
-        <component :is="currentView"></component>
+        <component :is="currentView">
+        </component>
       </keep-alive>
 <!-- 正则表达式 数组 include(使用 `v-bind`) 逗号不用-->
     </div>

@@ -8,10 +8,13 @@
       <span class="title">异步组价</span>
     </router-link>
     <router-link class="navbar" to="/demo3">
-      <span class="title">模块系统</span>
+      <span class="title">自定义事件</span>
     </router-link>
     <router-link class="navbar" to="/demo4">
-      <span class="title">父子组件相互通信</span>
+      <span class="title">父子通信</span>
+    </router-link>
+    <router-link class="navbar" to="/demo5">
+      <span class="title">非父子通信</span>
     </router-link>
 <hr>
     <router-view></router-view>

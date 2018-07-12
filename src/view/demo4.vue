@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h3>父子组件相互通信</h3>
+        <h3>父子通信</h3>
         <p>群消息：</p>
         <div>
             {{ somebody }} 说：我 {{ age }} 了。

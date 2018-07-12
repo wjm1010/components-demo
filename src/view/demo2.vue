@@ -37,18 +37,16 @@ export default {
         component: import('@/components/demo2/four'),
         /* 加载过程中显示的组件 */
         loading: {
-            template: '<p>loading...</p>'
+          template: '<p>loading...</p>'
         },
         /* 出现错误时显示的组件  */
         error: {
-            template: '\
-                <p style="color:red;">load failed!</p>\
-            '
+          template: '<p style="color:red;">load failed!</p>'
         },
         /* loading组件的延迟时间 */
         delay: 200,
         /* 最长等待时间，如果超过此时间，将显示error组件。 */
-        timeout:3200
+        timeout: 3200
       }
     }
   },
