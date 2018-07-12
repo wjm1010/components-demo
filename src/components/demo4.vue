@@ -2,11 +2,11 @@
     <div>
        <ul>
            <li v-for="(value, index) in girls" :key="index">
-                {{ index }} - {{ value.name }} - {{ value.age }}
-                <button @click="noticeGroup(value.name,value.age)">发送消息</button>
+                  {{ value.name }}：
+            <button @click="noticeGroup(value.name,value.age)">发送消息</button>
             </li>
        </ul>
-       <div>接收来自大群的消息:{{ noticeGirl }}</div>
+       <div>接收来自群众的消息：{{ noticeGirl }}</div>
     </div>
 </template>
 <script>
@@ -32,3 +32,9 @@ export default {
   }
 }
 </script>
+<style>
+  li {
+    list-style: none;
+    line-height: 30px
+  }
+</style>

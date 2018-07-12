@@ -1,9 +1,9 @@
 <template>
     <div>
         <h3>父子组件相互通信</h3>
-        <p>群消息girl：</p>
+        <p>群消息：</p>
         <div>
-            {{ somebody }} 说: 我 {{ age }} 了。
+            {{ somebody }} 说：我 {{ age }} 了。
         </div>
         <v-girl-group
                 :girls="aGirls"
@@ -13,7 +13,7 @@
     </div>
 </template>
 <script>
-import vGirlGroup from '@/components/demo1'
+import vGirlGroup from '@/components/demo4'
 
 export default {
   name: 'demo4',
@@ -24,15 +24,15 @@ export default {
     return {
       aGirls: [
         {
-          name: '小丽',
+          name: 'a',
           age: 22
         },
         {
-          name: '小美',
+          name: 'b',
           age: 21
         },
         {
-          name: '小荷',
+          name: 'c',
           age: 24
         }
       ],
@@ -47,7 +47,7 @@ export default {
       this.age = opt.age
 
       // 通知girl收到消息
-      this.noticeGirl = opt.name + ',已收到消息'
+      this.noticeGirl = opt.name + '，已收到消息'
     }
   }
 }
