@@ -16,6 +16,9 @@
     <router-link class="navbar" to="/demo5">
       <span class="title">非父子通信</span>
     </router-link>
+    <router-link class="navbar" to="/demo6">
+      <span class="title">ref索引调方法</span>
+    </router-link>
 <hr>
     <router-view></router-view>
   </div>
